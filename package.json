@@ -1,0 +1,24 @@
+{
+  "name": "cupang",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gxtxhm/cupang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gxtxhm/cupang/issues"
+  },
+  "homepage": "https://github.com/gxtxhm/cupang#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "uglify-js": "^3.13.5"
+  }
+}
