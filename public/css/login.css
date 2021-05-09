@@ -1,0 +1,114 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    text-align: center;
+    margin: 20px 20px 10px 20px;
+
+}
+header a img{
+    width: 45%;
+}
+
+form div{
+    
+    margin-bottom: 10px;
+}
+
+form .input_Id{
+    width: 100%;
+    height: 40px;
+}
+form .input_Id label{
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+form label i{
+    height: 100%;
+    font-size: 40px;
+}
+form .input_Id input{
+    height: 100%;width: 100%;
+}
+form .input_Pw input{
+    height: 100%;width: 100%;
+}
+form .input_Pw{
+    width: 100%;
+    height: 40px;
+}
+form .input_Pw label{
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+form .input_Id label i{
+padding-right: 5px;
+}
+form .input_Pw label i{
+    padding-right: 10px;
+}
+
+
+.checkInfo{
+    height: 30px;
+}
+.checkInfo a{
+    float: right;
+    font-size: 14px;
+    padding-top: 10px;
+    text-decoration: none;
+    color: #0073e9;
+    
+}
+.checkInfo label{
+    
+    width: 150px;
+    height: 30px;
+}
+.checkInfo label input{
+    margin-top: 10px;
+    width: 22px;
+    height: 22px;
+}
+.checkInfo label span{
+    font-size: 16px;
+    position: relative;
+    bottom: 5px;
+}
+
+.SignUp{
+    background-color: white;
+    border: #d9d9d9 2px solid;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+}
+.SignUp a{
+    text-decoration: none;
+    color: #5273e9;
+    position: relative;
+    top: 15px;
+    font-size: 16px;
+}
+form #submit{
+    background-color: #0074e9;
+    color: white;
+    border: #d9d9d9 2px solid;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+}
+
+
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
