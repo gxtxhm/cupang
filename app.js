@@ -20,3 +20,7 @@ app.get('/login',(req,res)=>{
     res.send("<p>login Success!</p>");//이런식으로 태그로 생성할 수도 있다.
 })
 app.listen(3000, ()=> console.log('3000 port!'));//3000포트를 리슨하게 하는것이다.
+
+app.get('/join.html', (req, res) =>{
+    res.sendFile(__dirname+"/public/html/join.html")
+})
