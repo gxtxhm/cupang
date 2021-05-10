@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join</title>
+    <script src="https://kit.fontawesome.com/7cd840cbdc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/join.css">
+</head>
+
+<body>
+
+    <div class = all>
+        <img src="../img/cupangLogo.png" alt="asd">
+        <p class = "comment">회원정보를 입력해주세요</p>
+        <form action="/my-handling-form-page" method="post">
+            <div class = "input_list">
+                <div class = "input_element">
+                    <i class="far fa-envelope"></i>
+                    <input type="email" class = "blank_input" id="email" placeholder="아이디(이메일)" />
+                </div>
+                <div class = "input_element">
+                    <i class="fas fa-unlock"></i>
+                    <input type="password" class = "blank_input" id="f_password" placeholder="비밀번호" />
+                </div>
+                <div class = "input_element">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" class = "blank_input" id="l_password" placeholder="비밀번호" />
+                </div>
+                <div class = "input_element">
+                    <i class="far fa-user"></i>
+                    <input type="name" class = "blank_input" id="name" placeholder="이름" />
+                </div>
+                <div class = "input_element">
+                    <i class="fas fa-mobile-alt"></i>
+                    <input type="text" class = "blank_input" id="phone_number" placeholder="휴대폰 번호" />
+                </div>
+            </div>
+    
+            <p class = "comment">쿠팡 서비스약관에 동의해주세요</p>
+            <div class="check_all">
+                <input type="checkbox"  class = "check">
+                <span>모두 동의합니다.</span>
+            </div>
+            <div class="check_list">
+                <ul>
+                    <li>
+                        <input type="checkbox" class = "check">
+                        <span>[필수] 만 14세 이상입니다.</span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class = "check">
+                        <span class = "agree">[필수] 쿠팡이용약관 동의</span>
+                        <span class = "more">></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class = "check">
+                        <span class = "agree">[필수] 전자금융거래 이용약관 동의</span>
+                        <span class = "more">></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class = "check">
+                        <span class = "agree">[필수] 개인정보 수집 및 이용 동의</span><span class = "more">></span>
+                    </li>
+                    <li>
+                        <input type="checkbox" class = "check">
+                        <span class = "agree">[필수] 개인정보 제공 동의</span><span class = "more">></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="submit_btn">
+                <button type="submit" class = "btn">동의하고 가입하기</button>
+            </div>
+        </form>
+        <footer>
+            ©Coupang Corp. All rights reserved.
+        </footer>
+        </div>
+    </div>
+    
+</body>
+
+</html>

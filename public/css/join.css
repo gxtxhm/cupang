@@ -1,0 +1,64 @@
+.all{
+    position: absolute; left: 50%; transform: translateX(-50%);
+}
+ul{
+    list-style-type:none;
+    padding: 5px 5px 5px 20px;
+}
+.check_list{
+    margin: 0px;
+    border: 1px solid;
+    width: 460px;
+    font-size: 18px;
+}
+
+img{
+    width: 195px;
+    margin: 30px 0px 0px 120px;
+}
+i{
+    width: 30px;
+    font-size: 30px;
+}
+
+.blank_input{
+    font-size: 13px;
+    padding: 10px;
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.comment, .check_all{
+    font-weight: bold;
+}
+
+.more{
+    float: right;
+}
+
+.check_all{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.check{
+    width: 18px;
+    height: 18px;
+    margin: 0px;
+}
+
+li, li > input{
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #0074e9;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin: 20px 0px 20px 0px;
+    padding: 5px 150px 5px 150px;
+    cursor: pointer;
+    box-shadow: inset 0 -2px 0 rgb(0 0 0 / 38%);
+}
