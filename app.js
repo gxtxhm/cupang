@@ -3,6 +3,8 @@ let app = express(); //이런식으로 사용한다.
 let fs = require('fs');//파일 입출력에 사용
 let path = require('path');
 
+//오류?
+
 app.use(express.static(path.join(__dirname,'public')));
 //*****************html, css, js, 이미지 파일 등은 public폴더 안에 있는 폴더에 각각 넣고 경로지정하면 될듯.****************
 
