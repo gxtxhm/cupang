@@ -4,7 +4,9 @@ let path = require('path');
 
 //할것  DB연동, 
 
-
+app.set('view engine', 'jade');
+app.set('views', './views');
+app.locals.pretty = true;
 
 let db = require('mysql');
 
@@ -44,4 +46,9 @@ app.listen(3000, ()=> console.log('3000 port!'));//3000포트를 리슨하게 �
 
 app.get('/join.html', (req, res) =>{
     res.sendFile(__dirname+"/public/html/join.html")
+})
+
+// 승준 페이지 테스트 중
+app.get('/jun', (req, res) => {
+  res.render('jun');
 })
