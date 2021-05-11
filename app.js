@@ -6,22 +6,24 @@ let path = require('path');
 
 
 
-let mysql      = require('mysql');
-let connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '1q2w3e4r5t!',
-  database : 'coupang' 
+let db = require('mysql');
+
+const conn = db.createConnection({  // mysql 접속 설정
+  host: '175.115.144.55',
+  port: 3306,
+  user: 'psj',
+  password: '123456',
+  database: 'coupang'
 });
  
-connection.connect();
- 
-connection.query('SELECT * FROM topic', function (error, results, fields) {
+conn.query('SELECT * FROM user', function (error, results, fields) {
   if (error){
       console.log(error);
   }
   console.log(results);
 });
+ 
+conn.end();
  
 
 app.use(express.static(path.join(__dirname,'public')));
@@ -43,5 +45,3 @@ app.listen(3000, ()=> console.log('3000 port!'));//3000포트를 리슨하게 �
 app.get('/join.html', (req, res) =>{
     res.sendFile(__dirname+"/public/html/join.html")
 })
-
-connection.end();
