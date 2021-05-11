@@ -1,9 +1,28 @@
 let express = require("express"); //express를 요청하면 함수값이 반환된다. 
 let app = express(); //이런식으로 사용한다.
-let fs = require('fs');//파일 입출력에 사용
 let path = require('path');
 
-//오류?
+//할것  DB연동, 
+
+
+
+let mysql      = require('mysql');
+let connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : '1q2w3e4r5t!',
+  database : 'coupang' 
+});
+ 
+connection.connect();
+ 
+connection.query('SELECT * FROM topic', function (error, results, fields) {
+  if (error){
+      console.log(error);
+  }
+  console.log(results);
+});
+ 
 
 app.use(express.static(path.join(__dirname,'public')));
 //*****************html, css, js, 이미지 파일 등은 public폴더 안에 있는 폴더에 각각 넣고 경로지정하면 될듯.****************
@@ -24,3 +43,5 @@ app.listen(3000, ()=> console.log('3000 port!'));//3000포트를 리슨하게 �
 app.get('/join.html', (req, res) =>{
     res.sendFile(__dirname+"/public/html/join.html")
 })
+
+connection.end();
