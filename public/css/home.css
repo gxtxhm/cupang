@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: Dotum, sans-serif;
+}
+
+.top-menu {
+    background: #f0f0f0;
+    height: 32px;
+}
+
+.menu-and-search {
+    background: #fff;
+    height: 116px;
+}
+
+.main-slide {
+    background: green;
+    height: 450px;
+}
+
+.merchandise {
+    background: #fff;
+    height: 800px;
+}
+
+.notification {
+    background: #fff;
+}
+
+.notification .layer1 {
+    border-top: #ddd solid 2px;
+    border-bottom: #ddd solid 1px;
+    height: 50px;
+}
+
+.notification .layer2 {
+    height: 160px;
+}
+
+.notification .layer3 {
+    height: 80px;
+}
+
+.footer {
+    background: #333;
+    height: 80px;
+    color: #888;
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    height: 100%;
+    width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sns {
+    display: flex;
+}
+
+.sns a {
+    display: block;
+    overflow: hidden;
+    background: url('/img/footer_asset_v8.png') no-repeat;
+    text-indent: -99em;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+}
+
+a.facebook {
+    background-position: -220px -30px;
+}
+
+a.blog {
+    background-position: -348px -30px;
+}
+
+a.insta {
+    background-position: -390px -30px;
+}
