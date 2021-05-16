@@ -9,7 +9,7 @@ let path = require('path');
 let db = require('mysql');
 
 const conn = db.createConnection({  // mysql 접속 설정
-  host: '175.115.144.55',
+  host: '192.168.35.13',
   port: 3306,
   user: 'psj',
   password: '123456',
@@ -21,6 +21,7 @@ conn.query('SELECT * FROM user', function (error, results, fields) {
       console.log(error);
   }
   console.log(results);
+  console.log("DB 연결 중");
 });
  
 conn.end();
