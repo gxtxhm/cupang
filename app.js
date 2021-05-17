@@ -4,7 +4,9 @@ let path = require('path');
 
 //할것  DB연동, 
 
-
+app.set('view engine', 'jade');
+app.set('views', './views');
+app.locals.pretty = true;
 
 let db = require('mysql');
 
@@ -36,7 +38,7 @@ app.use(express.static(path.join(__dirname,'public')));
 //길을 찾게해주는 과정을 라우팅이라고 부른다. 
 //밑에 코드는 '/'이 url로 접속한다면 res.send를 실행하겠다는 뜻이다. 응답하겠다는뜻이다.
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname+"/public/html/login.html");
+  res.render('home');
 });
 
 //로그인이니까 post방식으로 바꿔야함 html파일도 
