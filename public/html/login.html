@@ -13,13 +13,13 @@
             <!--a태그에 메인페이지 주소 넣으면됨. -->
         <header><a href=""><img src="img/cupangLogo.png" alt=""></a></header> 
         
-        <form action="login" method="get">
+        <form action="login" method="post">
             <div class="login_form">
                 <div class="input_Id">
-                    <label><i class="far fa-envelope"></i> <input type="text"></label>
+                    <label><i class="far fa-envelope"></i> <input type="text"name="userId"></label>
                 </div>
                 <div class="input_Pw">
-                    <label for=""><i class="fas fa-lock"></i><input type="password"></label>
+                    <label for=""><i class="fas fa-lock"></i><input type="password"name="password"></label>
                 </div>
                 <div class="checkInfo">
                     <label for=""><input type="checkbox"><span>자동로그인</span></label>

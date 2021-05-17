@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Document
+    script(src='https://kit.fontawesome.com/7cd840cbdc.js' crossorigin='anonymous')
+    link(rel='stylesheet' href='../css/login.css')
+  body
+    .wrap
+      // a태그에 메인페이지 주소 넣으면됨.
+      header
+        a(href='')
+          img(src='img/cupangLogo.png' alt='')
+      form(action='login' method='post')
+        .login_form
+          .input_Id
+            label
+              i.far.fa-envelope
+              input(type='text' name='userId')
+          .input_Pw
+            label(for='')
+              i.fas.fa-lock
+              input(type='password' name='password')
+          .checkInfo
+            label(for='')
+              input(type='checkbox')
+              span 자동로그인
+            // a태그에 아이디/비번찾기 사이트 주소입력
+            a(href='') 아이디(이메일)/비밀번호 찾기>
+          input#submit(type='submit' value='로그인')
+      hr
+      // a태그에 회원가입 페이지 입력
+      .SignUp
+        a(href='join.html') 회원가입
+      footer
+        | ©Coupang Corp. All rights reserved.

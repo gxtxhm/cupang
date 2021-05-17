@@ -17,7 +17,9 @@
   "homepage": "https://github.com/gxtxhm/cupang#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dialog": "^0.3.1",
     "express": "^4.17.1",
+    "express-session": "^1.17.1",
     "jade": "^0.29.0",
     "mysql": "^2.18.1",
     "uglify-js": "^3.13.5"
