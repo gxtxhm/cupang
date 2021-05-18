@@ -20,13 +20,13 @@ app.use(session({
     saveUninitialized:true
     }))
 
+const db_config  = require('./db-config.json');
 
 const conn = db.createConnection({  // mysql 접속 설정
-  host: '192.168.35.13',
-  port: 3306,
-  user: 'psj',
-  password: '123456',
-  database: 'coupang'
+  host     : db_config.host,
+  user     : db_config.user,
+  password : db_config.password,
+  database : db_config.database
 });
  
 conn.query('SELECT * FROM user', function (error, results, fields) {
